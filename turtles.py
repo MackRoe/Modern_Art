@@ -1,5 +1,6 @@
 from turtle import *
 from random import *
+import turtle
 
 
 def random_color():
@@ -21,6 +22,9 @@ def random_heading():
     setheading(randint(0, 360))
 
 
+screen = turtle.Screen()
+screen.setup(720, 360)
+screen.colormode(255)
 shape('turtle')
 for i in range(30):
     random_color()
